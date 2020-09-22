@@ -24,7 +24,6 @@ class App extends Component {
     const lastKeyPress = String.fromCharCode(charCode)
 
     this.setState({lastKeyPress})
-    console.log(String.fromCharCode(charCode));
   }
 
   render() {
