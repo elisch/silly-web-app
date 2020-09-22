@@ -10,8 +10,8 @@ class App extends Component {
     };
   }
 
-  shouldComponentUpdate() {
-    return false;
+  shouldComponentUpdate(nextState) {
+    return nextState !== this.state;
   }
 
   onInputChange = ({target}) => {
